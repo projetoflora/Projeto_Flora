@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box; /* Para garantir que padding e border não afetem a largura total */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Cor de fundo padrão */
+    background-image: url("imagem/fundo.jpg"); /* Caminho para sua imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+}
+
+header {
+    background: rgba(76, 175, 80, 0.8); /* Fundo verde com leve transparência */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.dropbtn {
+    background-color: transparent; /* Botão transparente */
+    color: white;
+    padding: 10px;
+    font-size: 24px; /* Tamanho maior para o ícone */
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Mostrar o conteúdo do dropdown ao passar o mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Alterar a cor dos links ao passar o mouse */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.content {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+    border-radius: 10px; /* Arredondar cantos */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.biomas-list {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding-left: 0; /* Remove padding à esquerda */
+}
+
+.biomas-list li {
+   margin-bottom: 15px; /* Espaçamento entre os itens da lista */
+   font-weight: bold; /* Destaque os nomes dos biomas */
+   color: #333; /* Cor do texto dos biomas */
+}
+
+footer {
+   text-align:center; 
+   padding:10px; 
+   background:#4CAF50; 
+   color:white; 
+   margin-top:20px; 
+   border-radius: 5px; /* Arredondar cantos do rodapé */
+}
